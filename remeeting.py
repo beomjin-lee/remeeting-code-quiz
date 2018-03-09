@@ -4,8 +4,6 @@ def function(data):
     ss, s, n = reduce(lambda a, b: map(sum, zip(a,b)), [(x*x, x, 1) for x in data])
     return (ss - s*s/n) / n
 
-data = [1, 1]
-
 """
 reduce is "reducing" function - lambda a, b: map(sum, zip(a,b))
 on the list of tuples [(x * x, x, 1), (x * x, x, 1)]
